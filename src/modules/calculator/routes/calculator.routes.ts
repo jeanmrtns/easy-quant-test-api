@@ -4,9 +4,9 @@ import { CalculatorController } from '../controllers/CalculatorController';
 const calculatorRoutes = Router();
 const calculatorController = new CalculatorController();
 
-calculatorRoutes.get('/sum', calculatorController.sum);
-calculatorRoutes.get('/sub', calculatorController.sub);
-calculatorRoutes.get('/div', calculatorController.div);
-calculatorRoutes.get('/mult', calculatorController.mult);
+calculatorRoutes.post('/sum', calculatorController.sum);
+calculatorRoutes.post('/sub', calculatorController.sub);
+calculatorRoutes.post('/div', calculatorController.div);
+calculatorRoutes.post('/mult', calculatorController.mult);
 
 export { calculatorRoutes };
